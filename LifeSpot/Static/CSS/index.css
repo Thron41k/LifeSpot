@@ -1,0 +1,84 @@
+﻿header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+header, footer, body, .video-container {
+    background-color: burlywood;
+}
+
+.video-container {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.navbar {
+    color: darkgray;
+    padding-left: 15%;
+}
+
+header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+
+#header-index {
+    color: #44453f;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: medium;
+    color: black;
+    line-height: 66%;
+    padding-left: 1%;
+}
+
+aside {
+    height: 100%;
+    width: 10%;
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 2%;
+    padding-right: 1%;
+    font-size: large;
+}
+
+.navbar p {
+    color: darkgray;
+    padding-left: 15%;
+}
+
+.navbar p:hover {
+     color: aliceblue;
+}
+
+body {
+    padding-left: 11%;
+}
+
+.search-container {
+    margin: 20px;
+    text-align: left;
+}
+
+.search-input {
+    padding: 10px 15px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
