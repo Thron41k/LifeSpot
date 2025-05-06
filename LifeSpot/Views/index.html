@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+
     <script type="text/javascript" src="../Static/JS/index.js"></script>
     <script>
-        //checkAge();
-        handleSession();
-        sessionLog();
+        // обработка сессии
+        handleSession(logger, checker /* Коллбек-функции */);
+
+        // функция для получения пользовательского ввода
         const inputParseFunction = function () {
             return document.getElementsByTagName('input')[0].value.toLowerCase();
         }
     </script>
+
 </head>
+
+<!-- Хедер страницы находится над тегом body -->
 <header id="header-index">
-    <!--Заголовок страницы-->
     <h1>LifeSpot - прямые трансляции с улиц</h1>
-    <!--Параграф-->
     <p>Покажем, что происходит прямо сейчас</p>
-    <div class="search-container">
-        <input type="text" oninput="filterContent()" class="search-input" placeholder="Поиск трансляций...">
-    </div>
+    <input type="text" oninput="filterContent()" size=50%>
 </header>
+
 <!--SIDEBAR-->
+
 <body>
     <div class="bordered">
         <div class="video-container">
-            <!--Нью-Йорк-->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
+            <h3>Нью-Йорк, Брайант Парк</h3>
         </div>
         <div class="video-container">
-            <!--Санкт-Петербург-->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
+            <h3>Санкт-Петербург, Невский Проспект</h3>
         </div>
         <div class="video-container">
-            <!--Лондон-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Лондон, автобусный маршрут</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/muVgPUnU7qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Лондон, автобусный маршрут</h3>
         </div>
     </div>
 </body>
+
 <!--FOOTER-->
 </html>
